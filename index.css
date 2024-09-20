@@ -161,7 +161,7 @@ body{
   }
 
 /* Media query for iPhone 15 and smaller */
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   body{
     width: 90%; /* Set width to 90% */
     margin: auto; /* Center the grid */
