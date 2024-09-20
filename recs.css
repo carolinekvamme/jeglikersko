@@ -181,6 +181,9 @@ body{
   } 
  .span-circle{
     font-size: 4vw !important; /* Custom font-size */
+  }
+ .italic{
+    font-size: 3vw !important; /* Custom font-size */
   } 
 }
   
