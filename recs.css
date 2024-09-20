@@ -166,15 +166,20 @@ body{
   body{
     width: 90%; /* Set width to 90% */
     margin: auto; /* Center the grid */
-    font-size: 3vw;
+    font-size: 4vw;
   }
   .gridMain {
     grid-template-columns: 1fr; /* Only one item per row */
     width: 100%; /* Set width to 100% */
     margin: auto; /* Center the grid */
   }
+ figcaption p{
+    font-size: 3vw;
+  }
+ .button-container {
+    font-size: 2vw !important; /* Custom font-size */
+  } 
 }
-  
   
   
   /* Font
