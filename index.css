@@ -176,10 +176,10 @@ body{
     font-size: 6vw;
   }
  .button-container {
-    font-size: 5vw !important; /* Custom font-size */
+    font-size: 4vw !important; /* Custom font-size */
   } 
  .span-circle{
-    font-size: 2vw !important; /* Custom font-size */
+    font-size: 4vw !important; /* Custom font-size */
   } 
 }
   
