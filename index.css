@@ -107,7 +107,6 @@ body{
   }
   
   /* Styling for each circle */
-  /* Styling for each circle */
   .circle-yes,
   .circle-no {
     width: 0.7em; /* Diameter of the circle, adjust as needed */
@@ -160,11 +159,22 @@ body{
   .circle-6 {
     grid-area: circle6;
   }
+
+/* Media query for iPhone 15 and smaller */
+@media (max-width: 375px) {
+  body{
+    width: 100%; /* Set width to 90% */
+    margin: auto; /* Center the grid */
+    font-size: 3vw;
+  }
+  .gridMain {
+    grid-template-columns: 1fr; /* Only one item per row */
+    width: 100%; /* Set width to 90% */
+    margin: auto; /* Center the grid */
+  }
+}
   
-  
-  
-  
-  /* Font
+/* Font
   .lato-thin {
     font-family: "Lato", sans-serif;
     font-weight: 100;
