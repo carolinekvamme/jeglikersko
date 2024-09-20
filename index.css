@@ -173,9 +173,12 @@ body{
     margin: auto; /* Center the grid */
   }
  figcaption p{
-    font-size: 3vw;
+    font-size: 6vw;
   }
  .button-container {
+    font-size: 5vw !important; /* Custom font-size */
+  } 
+ .span-circle{
     font-size: 2vw !important; /* Custom font-size */
   } 
 }
