@@ -1,0 +1,227 @@
+body{
+    width: 80%;
+    margin: auto;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5vw;
+    margin-bottom: 2%;
+  }
+  figure{
+    margin: 5%;
+    margin-bottom: 0%;
+  }
+  nav{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+  }
+  nav a{
+    color: black;
+    text-decoration: none;
+    padding: 2%;
+  }
+  nav a:hover:not(.active){
+    text-decoration: underline;
+  }
+  .gridMain{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    line-height: 1.5;
+  }
+  .gridMain img{
+    width: 100%;
+  }
+  .gridMain a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  #Home{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  }
+  
+  figcaption{
+    text-align: left;
+  }
+  
+  figcaption p{
+    font-size: 2vw;
+    font-weight: 600;
+    margin-bottom: 0%;
+    margin-top: 0%;
+  }
+  
+  img{
+    border-radius: 7px; /* This rounds the corners */
+  }
+  
+  .button-container {
+    display: inline-block; /* Make it behave like a button */
+    text-align: left; /* Align button to the left */
+    font-size: 1vw !important; /* Custom font-size */
+    margin-bottom: 5px;
+    padding: 10px 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer; /* Add pointer to show it's clickable */
+  }
+  
+  .button-container:hover {
+    background-color: #e63e3e;
+  }
+  
+  .circle-wrapper {
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: left; /* Vertically center align items */
+    margin-left: 5%;
+  }
+  
+  /* Styling for the number */
+  .span-circle {
+    font-size: 2vw; /* Responsive font size for the number */
+    font-weight: bold;
+    color: black; /* Color of the number */
+    margin-right: 1%; /* Space between the number and the circles */
+  }
+  
+  /* Container for the circular elements */
+  .circle-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 2%; /* Space between circles */
+    margin-top: 0; /* Space above the grid */
+    width: 100%; /* Ensure the container fills the available width */
+    max-width: 30px; /* Adjust based on your design needs */
+    grid-template-areas: 
+      "circle1 circle2 circle3"
+      "circle4 circle5 circle6"; /* Define areas for circles */
+  }
+  
+  /* Styling for each circle */
+  /* Styling for each circle */
+  .circle-yes,
+  .circle-no {
+    width: 0.7em; /* Diameter of the circle, adjust as needed */
+    height: 0.7em; /* Diameter of the circle, adjust as needed */
+    background-color: black; /* Default background color */
+    border-radius: 50%; /* Makes it a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black; /* Text color */
+    font-size: 1em; /* Font size to match circle size */
+    font-weight: bold;
+    overflow: hidden; /* Ensure content stays within the circle */
+  }
+  
+  .circle-yes {
+    background-color: black; /* Background color for "yes" */
+    color: black; /* Text color for "yes" */
+  }
+  
+  .circle-no {
+    background-color: grey; /* Background color for "no" */
+    color: grey; /* Text color for "no" */
+  }
+  
+  /* Place circles in specific grid areas */
+  .circle-1 {
+    grid-area: circle1;
+    margin-top: auto; /* Push circles 1-3 to the bottom */
+  }
+  
+  .circle-2 {
+    grid-area: circle2;
+    margin-top: auto; /* Push circles 1-3 to the bottom */
+  }
+  
+  .circle-3 {
+    grid-area: circle3;
+    margin-top: auto; /* Push circles 1-3 to the bottom */
+  }
+  
+  .circle-4 {
+    grid-area: circle4;
+  }
+  
+  .circle-5 {
+    grid-area: circle5;
+  }
+  
+  .circle-6 {
+    grid-area: circle6;
+  }
+  
+  
+  
+  
+  /* Font
+  .lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .lato-thin-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .lato-black-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  */
