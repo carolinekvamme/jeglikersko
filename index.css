@@ -23,7 +23,7 @@ nav{
     padding-bottom: 2%;
     background-color: white;
     display: grid;
-    grid-template-columns: 1fr 1fr 5fr;
+    grid-template-columns: 2fr 2fr 5fr;
     align-items: center;
 }
 nav a{
@@ -35,6 +35,7 @@ nav a{
 
 #Home{
     align-items: left;
+    width: 80%;
     margin-right: 15%;
 }
 
@@ -195,6 +196,7 @@ a{
         width: 51%;
         padding-top: 1%;
         padding-bottom: 1%;
+        grid-template-columns: 1fr 1fr 5fr;
     }
     .gridMain1{
         width: 50%;
