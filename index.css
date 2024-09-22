@@ -1,249 +1,208 @@
+html{
+    font-size: 1em;
+}
 body{
-    width: 80%;
-    margin: auto;
+    width: 100%;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.5vw;
-    margin-bottom: 2%;
-  }
-  figure{
-    margin: 5%;
-    margin-bottom: 0%;
-  }
-  nav{
+    margin: 20px auto;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     background-color: white;
-    display: flex;
-    justify-content: center;
-  }
-  nav a{
+}
+nav{
+    width: 92%;
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr;
+    align-items: center;
+}
+nav a{
     color: black;
     text-decoration: none;
     padding: 2%;
-  }
-  nav a:hover:not(.active){
-    text-decoration: underline;
-  }
-  .gridMain{
-    display: grid;
+    font-size: 0.7em;
+}
+
+#Home{
+    align-items: left;
+    margin-right: 15%;
+}
+
+.gridMain{
+    max-width: 960px;
     width: 90%;
     margin: auto;
-    grid-template-columns: 1fr 1fr;
-    line-height: 1.5;
-  }
-  .gridMain img{
+    margin-top: 10%;
+}
+.grid{
+    margin-bottom: 5%;
+}
+img{
+    border-radius: 7px;
     width: 100%;
-  }
-  .gridMain a{
-    text-decoration: none;
+}
+h1{
+    font-size: 2em;
+    margin: 0;
+}
+a{
     color: black;
-  }
-  
-  #Home{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-  }
-  
-  figcaption{
-    text-align: left;
-  }
-  
-  figcaption p{
-    font-size: 2vw;
-    font-weight: 600;
-    margin-bottom: 0%;
-    margin-top: 0%;
-  }
-  
-  img{
-    border-radius: 7px; /* This rounds the corners */
-  }
-  
-  .button-container {
+    text-decoration: none;
+}
+
+.button-container {
     display: inline-block; /* Make it behave like a button */
-    text-align: left; /* Align button to the left */
-    font-size: 1vw !important; /* Custom font-size */
-    margin-bottom: 5px;
-    padding: 10px 10px;
+    text-align: left; 
+    font-size: 0.5em;
+    font-weight: 300;
+    padding: 3px 3px;
+    margin: 0;
     background-color: #ff4d4d;
     color: white;
-    border-radius: 10px;
+    border-radius: 4px;
     transition: background-color 0.3s ease;
     cursor: pointer; /* Add pointer to show it's clickable */
-  }
-  
-  .button-container:hover {
+}
+.button-container:hover {
     background-color: #e63e3e;
-  }
-  
-  .circle-wrapper {
-    display: flex; /* Use flexbox to align items horizontally */
-    align-items: left; /* Vertically center align items */
-    margin-left: 5%;
-  }
-  
-  /* Styling for the number */
-  .span-circle {
-    font-size: 2vw; /* Responsive font size for the number */
-    font-weight: bold;
-    color: black; /* Color of the number */
-    margin-right: 1%; /* Space between the number and the circles */
-  }
-  
-  /* Container for the circular elements */
-  .circle-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-template-rows: repeat(2, 1fr); /* 2 rows */
-    gap: 2%; /* Space between circles */
-    margin-top: 0; /* Space above the grid */
-    width: 100%; /* Ensure the container fills the available width */
-    max-width: 30px; /* Adjust based on your design needs */
-    grid-template-areas: 
-      "circle1 circle2 circle3"
-      "circle4 circle5 circle6"; /* Define areas for circles */
-  }
-  
-  /* Styling for each circle */
-  .circle-yes,
-  .circle-no {
-    width: 0.7em; /* Diameter of the circle, adjust as needed */
-    height: 0.7em; /* Diameter of the circle, adjust as needed */
-    background-color: black; /* Default background color */
-    border-radius: 50%; /* Makes it a circle */
+}
+
+.teaser{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-weight: 700;
+}
+
+.circle-wrapper {
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: black; /* Text color */
-    font-size: 1em; /* Font size to match circle size */
-    font-weight: bold;
-    overflow: hidden; /* Ensure content stays within the circle */
-  }
-  
-  .circle-yes {
-    background-color: black; /* Background color for "yes" */
-    color: black; /* Text color for "yes" */
-  }
-  
-  .circle-no {
-    background-color: grey; /* Background color for "no" */
-    color: grey; /* Text color for "no" */
-  }
-  
-  /* Place circles in specific grid areas */
-  .circle-1 {
-    grid-area: circle1;
-    margin-top: auto; /* Push circles 1-3 to the bottom */
-  }
-  
-  .circle-2 {
-    grid-area: circle2;
-    margin-top: auto; /* Push circles 1-3 to the bottom */
-  }
-  
-  .circle-3 {
-    grid-area: circle3;
-    margin-top: auto; /* Push circles 1-3 to the bottom */
-  }
-  
-  .circle-4 {
-    grid-area: circle4;
-  }
-  
-  .circle-5 {
-    grid-area: circle5;
-  }
-  
-  .circle-6 {
-    grid-area: circle6;
-  }
-
-/* Media query for iPhone 15 and smaller */
-@media (max-width: 500px) {
-  body{
-    width: 90%; /* Set width to 90% */
-    margin: auto; /* Center the grid */
-    font-size: 4vw;
-  }
-  .gridMain {
-    grid-template-columns: 1fr; /* Only one item per row */
-    width: 100%; /* Set width to 100% */
-    margin: auto; /* Center the grid */
-  }
- figcaption p{
-    font-size: 6vw;
-  }
- .button-container {
-    font-size: 4vw !important; /* Custom font-size */
-  } 
- .span-circle{
-    font-size: 4vw !important; /* Custom font-size */
-  } 
- .italic{
-    font-size: 3vw !important; /* Custom font-size */
-  } 
 }
-  
-/* Font
-  .lato-thin {
-    font-family: "Lato", sans-serif;
-    font-weight: 100;
-    font-style: normal;
+.circle-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: column;
+    grid-column-gap: 10%;
+    grid-row-gap: 10%;
+}
+.rank{
+    margin-right: 0.5vw;
+    font-size: 0.5em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.circle-yes,
+.circle-no{
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: black;
+}
+.circle-no{
+    background-color: grey;
+}
+
+/* reviews */
+.imgRecs{
+    width: 100%;
+    margin: auto;
+    display: block;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+.gridMain1{
+    width: 90%;
+    margin: auto;
+    margin-top: 10%;
   }
-  
-  .lato-light {
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .lato-regular {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .lato-bold {
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .lato-black {
-    font-family: "Lato", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .lato-thin-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .lato-light-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .lato-regular-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .lato-bold-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .lato-black-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-  }
-  */
+.h1T{
+    font-size: 1.5em;
+    margin-top: 1%;
+}
+.h1P{
+    font-size: 1.5em;
+}
+.italic{
+    font-size: 0.7em;
+    font-style: italic !important;
+}
+.Recs{
+    font-size: 1em;
+}
+.project{
+    width: 90%;
+    margin: auto;
+    margin-top: 10%;
+}
+.guest{
+    font-size: 1em;
+}
+
+@media screen and (min-width: 600px) {
+    nav a{
+        font-size: 1.5em;
+    }
+    .gridMain{
+        max-width: none;
+        width: 50%;
+        margin-top: 6%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3%;
+    }
+    .grid{
+        margin-bottom: 10%;
+    }
+    .button-container { 
+        margin-top: 2%;
+        font-size: 0.9em;
+    }
+    .teaser{
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-weight: 700;
+        font-size: 2em;
+    }
+    .circle-container{
+        grid-column-gap: 15%;
+        grid-row-gap: 15%;
+    }
+    .rank{
+        margin-right: 0.2vw;
+        font-size: 0.8em;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .circle-yes,
+    .circle-no{
+        width: 8px;
+        height: 8px;
+    }
+    .circle-no{
+        background-color: grey;
+    }
+    nav{
+        width: 51%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    .gridMain1{
+        width: 50%;
+        margin-top: 6%;
+    }
+    .project{
+        width: 50%;
+        margin: auto;
+        margin-top: 5%;
+    }
+}
