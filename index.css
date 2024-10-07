@@ -42,7 +42,7 @@ nav a{
 .gridMain{
     max-width: 960px;
     width: 90%;
-    margin: auto;
+    margin: auto; 
     margin-top: 13%;
 }
 .grid{
@@ -149,7 +149,7 @@ a{
     font-size: 1em;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
     nav a{
         font-size: 1.5em;
     }
@@ -200,7 +200,7 @@ a{
     }
     .gridMain1{
         width: 50%;
-        margin-top: 8%;
+        margin-top: 6%;
     }
     .project{
         width: 50%;
