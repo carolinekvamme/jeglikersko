@@ -211,4 +211,11 @@ a{
         margin: auto;
         margin-top: 5%;
     }
+    #pdf{
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;  
+        -webkit-overflow-scrolling: touch;
+        box-sizing: border-box;
+    }
 }
