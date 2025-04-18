@@ -112,8 +112,12 @@ a{
 .circle-no{
     background-color: grey;
 }
+/* Project */
+#link{
+    color: grey;
+}
 
-/* reviews */
+/* Reviews */
 .imgRecs{
     width: 100%;
     margin: auto;
